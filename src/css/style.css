@@ -1,0 +1,146 @@
+/*====================*/
+/*========DEVS========*/
+/*====================*/
+
+
+
+
+.devs {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+    padding: 0 30px;
+    position: relative;
+}
+
+
+.dev-1 { background-color: var(--color-1); }
+.dev-2 { background-color: var(--color-2); }
+.dev-3 { background-color: var(--color-3); }
+.dev-4 { background-color: var(--color-4); }
+.dev-5 { background-color: var(--color-5); }
+.dev-6 { background-color: var(--color-6); }
+.dev-7 { background-color: var(--color-7); }
+.dev-8 { background-color: var(--color-8); }
+.dev-9 { background-color: var(--color-9); }
+.dev-10 { background-color: var(--color-10); }
+.dev-11 { background-color: var(--color-11); }
+.dev-12 { background-color: var(--color-12); }
+
+.devs .dev { 
+    filter: grayscale(50%);
+    transition: all, 0.5s;
+    grid-column: span 6;
+
+}
+
+
+.devs .dev:hover {
+    filter: grayscale(0);
+    transform: scale(1.025);
+    
+}
+
+
+/*=====================*/
+/*=======DEV ZOOM======*/
+/*=====================*/
+
+
+.dev-zoom {
+    background-color: rgb(12, 12, 14);
+    text-align: center;
+    position: relative;
+    display: none;
+    color: white;
+}
+
+.dev-zoom i {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    color:rgb(12, 12, 14);
+    
+    
+}
+
+
+.dev-image {
+    width: 100px;
+    display: inline-block;
+    
+}
+
+
+
+
+/*=============================*/
+/*========NES LIBRAIRIE========*/
+/*=============================*/
+
+.nes-progress {
+    width: 400px;
+    height: 20px;
+
+    
+}
+
+
+
+
+/*=============================*/
+/*========MEDIA QUERIES========*/
+/*=============================*/
+
+
+
+@media screen and (min-width: 768px)  {
+
+    .devs .dev {  
+        grid-column: span 4;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 990px)  {
+
+    .devs .dev {  
+        grid-column: span 3;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1200px)  {
+
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1400px)  {
+
+
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+}
