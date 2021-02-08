@@ -5,18 +5,25 @@ var card = $(".devs .dev");
 card.click(function() {
     // Récupération du nom du dev
     let currentDev = $(this).attr("id");
+    let randomAttack = Math.floor(Math.random()*90 + 10)
     // Liste des brawlers avec leurs statistiques
     let devs = {
-      "greg": {
+      "Greg": {
         "description": "Greg est un dev passionné !",
         "image": "testPixel.png",
-        "attack": "20"
+        "attack": randomAttack
       },
 
-      "nelson": {
+      "Nelson": {
           "description": "Nelson est un dev futé et habile !",
           "image": "fff.png",
-          "attack": "80",
+          "attack": randomAttack
+      },
+
+      "Gabin": {
+        "description": "Gabin use de tous les supterfuges pour arriver à ses fins, c'est un pokedev redoutable et il ne faut surtout pas le sous-estimé, ses points forts sont la ruse, l'intelligence, la souplesse et ses pouvoirs incroyable !!! Sont point faible: les chatouilles !!!",
+        "image": "gabinPixel.png",
+        "attack": randomAttack
       }
     }
         $(".dev-name").html(currentDev);
@@ -33,22 +40,20 @@ card.click(function() {
         }
         
         
-        $.fn.zoomCardPosition = function() {
+       $.fn.devZoomPosition = function() {
             this.css({
                 "position": "fixed",
                 "left": "50%",
                 "top": "50%",
-                "z-index": "10"
-            });
-            this.css({
-                "margin-left": -this.width()/2 + "px",
-                "margin-top": -this.height()/2 + "px"
-            });
+                "transform": "translateX(-50%)",
+                "margin-top": -this.height()/2     
+            });     
         }
  
-    $(".dev-zoom").zoomCardPosition()
+    $(".dev-zoom").devZoomPosition();
     $(".dev-zoom").fadeIn();
-    $(".dev").css({"opacity": "50%"})
+    $(".dev").css({"opacity": "50%"});
+   
 
     $(() => {
         {

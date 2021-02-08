@@ -10,11 +10,12 @@ font-family: 'Press Start 2P', cursive;
     border-radius: var(--radius); 
     text-align: center;
     padding: 20px;
-
 }
+
+
 .dev img {
     display: inline-block;
-    width: 150px;
+    width: 100%;
 }
 
 .dev p {

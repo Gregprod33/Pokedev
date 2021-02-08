@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    font-family: consolas;
+   
 }
 
 body > * { box-sizing: border-box; }

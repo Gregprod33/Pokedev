@@ -11,5 +11,6 @@
     --color-10: rgb(39, 125, 161);
     --color-11: rgb(156, 137, 184);
     --color-12: rgb(240, 166, 202);
-    --radius: 8px;
+    --color-grey: rgb(158, 158, 158);
+    --radius: 20px;
 }
