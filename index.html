@@ -11,13 +11,13 @@
         <link rel="stylesheet" href="src/css/global.css">
         <link rel="stylesheet" href="src/css/style.css">
 
-        <title>Devedex</title>
+        <title>Pokedev</title>
     </head>
     <body>
         <div class="container">
             <div class="devs">
                 <div id="Greg" class="dev dev-1">
-                    <img src="src/img/testPixel.png" alt="Greg">
+                    <img src="src/img/gabinPixel.png" alt="Greg">
                     <p>Greg</p>
                 </div>
                 <div id="Nelson" class="dev dev-2">
@@ -67,26 +67,32 @@
                 
             </div> 
         </div>
-        
-
-        <div class="dev-container">
-            <div class="dev-zoom">
-                <i class="fas fa-times-circle"></i>
-                <div id="dev-infos">
-                    <p class="dev-name nes-text is-primary">Greg</p>
-                    <img class="dev-image" src="src/img/greg.jpg" alt="greg">
-                    <p class="dev-description">Greg est un dev passionné !</p>
-                </div>
-                <div id="dev-stats">
-                    <p>Attaque</p>
-                    <div class="dev-progress">
-                        <progress id="progressbar" class="attack nes-progress" max="100" value="60"></progress>
-                        <span class="progress-value">60%</span>
-                    </div>
-                </div>
-                <button type="button" class="nes-btn is-primary">Attrapez-le!</button>
+        <div class="dev-zoom">
+            <i class="fas fa-times-circle"></i>
+            <div id="dev-infos">
+                <p class="dev-name nes-text is-primary">Greg</p>
+                <div class="image-description">
+                    <img class="photo dev-image" src="src/img/greg.jpg" alt="greg">
+                    <p class="dev-description">Greg est un dev passionné !</p> 
+                </div>   
             </div>
+            <div id="dev-stats">
+                <div class="dev-progress">
+                    <p class="p-attaque">Attaque</p>
+                    <progress id="progressbar-attack" class="progressbar attack nes-progress" max="100" value="60"></progress>
+                    <span class="progress-value-attack">60%</span>
+                    <p>Défense</p>
+                    <progress id="progressbar-defense" class="progressbar defense nes-progress" max="100" value="50"></progress>
+                    <span class="progress-value-defense">30%</span>
+                    <p>Pouvoirs</p>
+                    <progress id="progressbar-power" class="progressbar power nes-progress" max="100" value="60"></progress>
+                    <span class="progress-value-power">60%</span>
+                    <a class="dev-link" href="" target="_blank"><i class="nes-pokeball"></i></a>
+                </div>
+                    <a id="pokeball-image" class="dev-link" href="" target="_blank"><img src="src/img/pokeball_alpha.png" alt="contact"></a>
+            </div>  
         </div>
+       
         
         
         <script

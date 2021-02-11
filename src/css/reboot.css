@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-   
+   line-height: 1.2em;
 }
 
 body > * { box-sizing: border-box; }

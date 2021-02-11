@@ -42,52 +42,57 @@
 }
 
 
+.dev-image {
+    width: 100px;
+}
+    
+
 /*=====================*/
 /*=======DEV ZOOM======*/
 /*=====================*/
 
 
-
-.dev-container {
-    position: relative;
-}
-
-
 .dev-zoom {
     background-color: rgb(37, 37, 39);
-    width: 50%;
+    max-width: 100%;
     display: none;
     color: white;
-    padding: 25px 50px 20px 50px;
-    border-radius: var(--radius);
-    
+    padding: 25px 10px 0px 10px;
+    border-radius: var(--radius); 
+    text-align: center;
 }
-
-
-
-.dev-zoom img {
-    width: 40%;
-    margin-bottom: 25px;
-    
-}
-
-.dev-zoom i {
-    position: absolute;
-    top: -20px;
-    right: -15px;
-    color:rgb(12, 12, 14); 
-}
-
-
-#dev-infos { text-align: center; }
-
-#dev-infos p { word-wrap: break-word;}
-
 
 
 .dev-description {
-    text-align:left;
-} 
+    text-align: left;
+}
+
+
+.photo {
+    width: 40%;
+    float: left;  
+    display: none;
+}
+
+.fa-times-circle {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    color:rgb(12, 12, 14);
+    z-index: 10;
+}
+
+
+#dev-infos { 
+    text-align: center; 
+    margin-bottom: 30px;
+}
+
+#dev-infos p { 
+    padding: 0 8px;
+    word-wrap: break-word;}
+
+
 
 .dev-name {
     text-align: center;
@@ -96,32 +101,33 @@
 
 
 
-.dev-image {
-    width: 100px;
-    display: inline-block;  
-}
-
-
-
-.dev-progress{
-    display: flex;
-    align-items: center;
-
-}
 
 #dev-stats p {
     margin-bottom: 0;
     margin-left: 3px;
     font-size: 0.8em;
-    color: var(--color-grey);
-
+    color: var(--color-grey);   
 }
 
-.progress-value { 
+.progress-value-attack, .progress-value-defense, .progress-value-power { 
     color: var(--color-grey);
-    display: inline-block;
-    
+    font-size: 0.7em;
+    display: none;
+    margin-bottom: 10px;
 }
+
+.nes-pokeball {
+    visibility: hidden;
+}
+
+#pokeball-image img {
+    width: 60px;
+    margin-top: -130px;
+ 
+}
+
+
+
 
 
 
@@ -131,9 +137,17 @@
 /*========NES LIBRAIRIE========*/
 /*=============================*/
 
+.dev-progress {
+    text-align: center;
+}
+
+.dev-progress p {
+    text-align: left;
+}
+
 
 .nes-progress {
-    width: 80% !important;
+    width: 95%;
     height: 20px;
 }
 
@@ -148,14 +162,51 @@
 
 
 
+
+
+
+
 @media screen and (min-width: 768px)  {
 
+    .nes-pokeball {
+        visibility: hidden;
+    }
+
+    
     .devs .dev {  
         grid-column: span 4;
     }
     
-   
 
+    .nes-progress {
+        width: 80%;
+    }
+
+
+    .photo {
+        width: 40%;
+        max-height: 50vh;
+        float: left;  
+        display: inline;
+        
+    }
+
+    .progress-value-attack, .progress-value-defense, .progress-value-power { 
+        color: var(--color-grey);
+        font-size: 0.8em;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    #pokeball-image img {
+        width: 70px;
+        position: absolute;
+        right: 40%;
+        bottom: 3%;
+        margin-top: 25px;
+       
+    }
+    
 }
 
 
@@ -173,7 +224,31 @@
     }
 
 
+    .dev-zoom {
+        background-color: rgb(37, 37, 39);
+        max-width: 80%;
+        display: none;
+        color: white;
+        padding: 25px 10px 0px 10px;
+        border-radius: var(--radius); 
+    }
+
+
+
+    .dev-stats {
+        clear: both;
+    }
+
+    .nes-pokeball {
+        visibility: hidden;
+    }
     
+    #pokeball-image img {
+        width: 70px;
+        margin-top: 20px;
+       
+    }
+       
 
 
 }
@@ -189,22 +264,51 @@
         margin: 0 auto;
     }
 
+
+
+    .dev-zoom {
+        background-color: rgb(37, 37, 39);
+        max-width: 628px;
+        display: none;
+        color: white;
+        padding: 25px 10px 0px 10px;
+        border-radius: var(--radius); 
+        
+    }
     
+   .photo {
+       margin-bottom: 30px;
+       width: 222px;
+       float:none;
+   }
 
-}
-
-
-
-@media screen and (min-width: 1400px)  {
-
-
-    .container {
-        max-width: 1300px;;
-        margin: 0 auto;
+    .nes-pokeball {
+        visibility: visible;
+        margin-top: 10px;
+        margin-right: 75%;
+        
     }
 
 
-  
+    .dev-stats {
+        
+        margin-top: 45px;
+    }
 
+    .dev-description {
+        text-align: left;
+    }
+    
+    .image-description {
+        display: flex;
+        align-items: center;
+    }
+   
+    #pokeball-image img {
+        display: none;
+       
+    }
 
 }
+
+
