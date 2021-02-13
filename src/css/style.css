@@ -1,3 +1,82 @@
+/*=================+===*/
+/*=======HEADER========*/
+/*====================*/
+
+
+header {
+    margin-top: 50px;
+    text-align: center;
+}
+
+header img {
+    width: 320px;
+    margin: 0 auto;
+}
+
+
+
+
+/*=========================*/
+/*======PRESENTATION=======*/
+/*=========================*/
+
+
+#presentation {
+    margin-top: 100px;
+    padding: 40px;
+    
+}
+
+
+#presentation-image {
+    width: 200px;
+}
+
+
+.nes-balloon  {
+    display: flex;
+    flex-direction: column;
+}
+
+.nes-logo {
+    margin-top: 15px;
+    align-self: flex-end;
+}
+
+
+
+.bounce {
+    animation-name: myBounce;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes myBounce {
+    0% {
+        transform: translateY(0);
+        color: #efebe0;
+    }
+    10% {
+        transform:translateY(0);
+    }
+    30% {
+        transform:  translateY(-8px);
+        color: #9146ff;
+    }
+    50% {
+        transform:  translateY(0);
+    }
+    100% {
+        transform: scale(1, 1) translateY(0);
+        color: #efebe0;
+    }
+    
+}
+
+
 /*====================*/
 /*========DEVS========*/
 /*====================*/
@@ -9,9 +88,10 @@
     color: white;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
+    gap: 15px;
     margin-top: 50px;
-    padding: 0 30px;
+    padding: 0 20px 0 20px;
+    
 }
 
 
@@ -32,6 +112,7 @@
     filter: grayscale(50%);
     transition: all, 0.5s;
     grid-column: span 6;
+    box-shadow: 2px 2px 2px black;
 }
 
 
@@ -42,9 +123,7 @@
 }
 
 
-.dev-image {
-    width: 100px;
-}
+
     
 
 /*=====================*/
@@ -60,11 +139,14 @@
     padding: 25px 10px 0px 10px;
     border-radius: var(--radius); 
     text-align: center;
+    box-shadow: 2px 2px 2px black;
+    
 }
 
 
 .dev-description {
     text-align: left;
+    margin-bottom: 0;
 }
 
 
@@ -76,16 +158,16 @@
 
 .fa-times-circle {
     position: absolute;
-    top: -15px;
-    right: -15px;
-    color:rgb(12, 12, 14);
+    top: 8px;
+    right: 10px;
+    color:#E76E55;
     z-index: 10;
 }
 
 
 #dev-infos { 
     text-align: center; 
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 #dev-infos p { 
@@ -101,12 +183,17 @@
 
 
 
+.dev-progress{
+    display:none;
+}
+
 
 #dev-stats p {
     margin-bottom: 0;
     margin-left: 3px;
     font-size: 0.8em;
-    color: var(--color-grey);   
+    color: var(--color-grey);
+     
 }
 
 .progress-value-attack, .progress-value-defense, .progress-value-power { 
@@ -122,12 +209,35 @@
 
 #pokeball-image img {
     width: 60px;
-    margin-top: -130px;
- 
+    padding-bottom: 25px;
+    
 }
 
 
+.ball-turn {
+    transform: rotate(360deg);
+    transition: all 0.5 ease-in-out;
+}
 
+
+.turn {
+    animation-name: turn;
+    animation-duration: 0.7s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+    
+}
+
+
+@keyframes turn {
+
+    0% { transform: rotate(0);}
+    10% { transform: rotate(0deg);}
+    30% {transform: rotate(0deg);}
+    50% {transform: rotate(-15deg);}
+    100% {transform: rotate(360deg);}
+  
+}
 
 
 
@@ -160,7 +270,13 @@
 /*========MEDIA QUERIES========*/
 /*=============================*/
 
+@media screen and (min-width: 640px) {
+    .devs .dev {  
+        grid-column: span 4;
+    }
 
+
+}
 
 
 
@@ -172,10 +288,11 @@
         visibility: hidden;
     }
 
-    
-    .devs .dev {  
-        grid-column: span 4;
+
+    .dev-progress {
+        display: block;
     }
+    
     
 
     .nes-progress {
@@ -200,10 +317,7 @@
 
     #pokeball-image img {
         width: 70px;
-        position: absolute;
-        right: 40%;
-        bottom: 3%;
-        margin-top: 25px;
+        padding: 15px 0;
        
     }
     
@@ -239,17 +353,8 @@
         clear: both;
     }
 
-    .nes-pokeball {
-        visibility: hidden;
-    }
     
-    #pokeball-image img {
-        width: 70px;
-        margin-top: 20px;
-       
-    }
-       
-
+    
 
 }
 
@@ -282,13 +387,7 @@
        float:none;
    }
 
-    .nes-pokeball {
-        visibility: visible;
-        margin-top: 10px;
-        margin-right: 75%;
-        
-    }
-
+ 
 
     .dev-stats {
         
@@ -304,10 +403,6 @@
         align-items: center;
     }
    
-    #pokeball-image img {
-        display: none;
-       
-    }
 
 }
 

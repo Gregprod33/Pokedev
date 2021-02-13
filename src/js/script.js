@@ -16,37 +16,133 @@ card.click(function() {
 
     // Liste des dev avec leurs statistiques
     let devs = {
-      "Greg": {
-        "description": "Greg est un dev passionné !",
-        "image": "gabinPixel.png",
+      "Nelson ARAUJO": {
+        "description": "Passionné par le web et le développement, Nelson saura parfaitement intégrer vos équipes. Son parcours témoigne d'une grande appétence à l'apprentissage. Point fort: adaptabilité. Point faible: les noeuds de cravate.",
+        "image": "nelson.png",
+        "attack": randomAttack,
+        "defense": randomDefense,
+        "power": randomPower,
+        "link": "https://www.linkedin.com/in/nelson-santos-araujo/"
+      },
+
+      "Amine BENLAKHDAR": {
+          "description": "Calme et d'une grande finesse d'esprit, Amine saura relever tous les défits.Son parcours scientifique et informatique témoigne de sa passion pour le développement. Point fort: sagesse. Point faible: le Tango.",
+          "image": "amine.png",
+          "attack": randomAttack,
+          "defense": randomDefense,
+          "power": randomPower,
+          
+      },
+
+      "Grégory BOES": {
+        "description": "Une grande curiosité en général et une passion grandissante pour le développement web. Un parcours dans l'audiovisuel qui permet d'appréhender la technique et l'esthétique. Point fort: esprit d'équipe. Point faible: le bricolage.",
+        "image": "greg.png",
         "attack": randomAttack,
         "defense": randomDefense,
         "power": randomPower,
         "link": "https://www.linkedin.com/in/gr%C3%A9gory-boes-98b0b21a3/"
       },
 
-      "Nelson": {
-          "description": "Nelson est un dev futé et habile !",
-          "image": "fff.png",
-          "attack": randomAttack,
-          "defense": randomDefense,
-          "power": randomPower
-      },
 
-      "Gabin": {
-        "description": "Gabin use de tous les supterfuges pour arriver à ses fins, c'est un pokedev redoutable ses points forts sont la ruse, l'intelligence, la souplesse et ses pouvoirs incroyable !!! Sont point faible: les chatouilles !!!",
-        "image": "gabinPixel.png",
+      "Ken BROSSE": {
+        "description": "Sa grande expérience dans les métiers de la restauration lui confère une très bonne organisation et une grande efficacité quelle que soit la situation. Point fort: la technique. Point faible: son revers lifté.",
+        "image": "ken.png",
         "attack": randomAttack,
         "defense": randomDefense,
-        "power": randomPower
-      }
+        "power": randomPower,
+        "link": "https://www.linkedin.com/in/ken-b-4096aa1a3/"
+
+
+     },
+
+     "Grégory CADET": {
+        "description": "Ancien coach sportif et passionné de nouvelles technologies, Greg apporte une énergie positive et constructive au sein d'un groupe. Patient et engagé, sa touche artistique fait toute la différence. Point fort: le design. Point faible: la couture.",
+        "image": "gregC.png",
+        "attack": randomAttack,
+        "defense": randomDefense,
+        "power": randomPower,
+        "link": "https://www.linkedin.com/in/gr%C3%A9gory-cadet-marthe-130617153/"
+     },
+
+
+     "Clément DOMINIQUE": {
+        "description": "Grace à son parcours de commercial, Clément trouve toujours une solution pour résoudre les challenges qu'il rencontre! Il saura être force de proposition dans vos équipes et s'impliquer dans tous les projets. Point fort: la confiance. Point faible: le bowling.",
+        "image": "clement.png",
+        "attack": randomAttack,
+        "defense": randomDefense,
+        "power": randomPower,
+        "link": "https://www.linkedin.com/in/clement-dominique-4461a4108/"
+     },
+
+
+
+     "Jonathan DUPAU": {
+        "description": "Pourvu d'une très grande motivation et d'un esprit entreprenant, Jonathan regroupe toutes les qualités d'un futur développeur aguerri. Maitrise de l'informatique et esprit d'équipe! Point fort: l'organisation. Point faible: le mandarin.",
+        "image": "jonathan.png",
+        "attack": randomAttack,
+        "defense": randomDefense,
+        "power": randomPower,
+        "link": "https://www.linkedin.com/in/jonathan-dupau-43565a1a0/"
+     },
+
+
+     "Mickael LEPELLETIER": {
+        "description": "Son mental d'acier lui permet de rester focus en permanence sur ses objectifs! Sociable et baignant dans l'informatique depuis toujours, Mickael ne cesse de monter en compétences. Point fort: l'analyse. Point faible: le jardinage.",
+        "image": "mickael.png",
+        "attack": randomAttack,
+        "defense": randomDefense,
+        "power": randomPower,
+        "link": "https://www.linkedin.com/in/mickael-lepelletier-284334187/"
+     },
+
+
+     
+    "Geoffrey MIARD": {
+        "description": "Geoffrey aime par dessus tout sortir de sa zone de confort pour relever de nouveaux défis et aller au bout de lui même. Son parcours au sein de la Marine Nationale témoigne de sa rigueur. Point fort: la concentration. Point faibe: l'entrechat.",
+        "image": "geoffrey.png",
+        "attack": randomAttack,
+        "defense": randomDefense,
+        "power": randomPower,
+        "link": "https://www.linkedin.com/in/geoffrey-miard-1699ba195/"
+     },
+
+
+     "Sara MOSCARDELLI": {
+        "description": "Si vous souhaitez un rayon de soleil dans votre équipe, optez tout de suite pour Sara! Toujours motivée pour apprendre et progresser, elle mettra du peps et de la créativité dans vos projets. Point fort: appliquée. Point faible: la force basque.",
+        "image": "sara.png",
+        "attack": randomAttack,
+        "defense": randomDefense,
+        "power": randomPower,
+        "link": "https://www.linkedin.com/in/sara-moscardelli/"
+     },
+
+
+     "Paul SOLARI": {
+        "description": "Ne vous fiez pas à sa discrétion, Paul est emprunt de motivation et d'envie d'apprendre toujours plus. Il se passionne pour le développement et souhaite poursuivre ses études dans ce domaine. Point fort: méthodique. Point faible: la pâte feuilletée.",
+        "image": "paul.png",
+        "attack": randomAttack,
+        "defense": randomDefense,
+        "power": randomPower,
+        
+     },
+
+
+     "Xin TAO": {
+        "description": "Méthodique et astucieuse, Xin aime se donner de nouveaux challenges. Son parcours dénote d'une grande pugnacité et une d'une détermination à toute épreuve. Point fort: la logique. Point faible: l'accrobranche.",
+        "image": "xin.png",
+        "attack": randomAttack,
+        "defense": randomDefense,
+        "power": randomPower,
+        
+     }
+
     }
 
 
     // Récupération des données dans la carte active
     $(".dev-name").html(currentDev);
     $(".dev-description").html(devs[currentDev].description);
-    $(".dev-image").attr("src", "src/img/" + devs[currentDev].image);
+    $(".dev-image").attr("src", "src/img/promo/pixel/" + devs[currentDev].image);
     $(".attack").attr("value", devs[currentDev].attack);
     $(".defense").attr("value", devs[currentDev].defense);
     $(".power").attr("value", devs[currentDev].power);
@@ -94,96 +190,97 @@ card.click(function() {
 
     // Animation des barres
 
-    const barAnimate = (progressbar) => {
-        let value = progressbar.val();
-        let start = 0;
+        const barAnimate = (progressbar) => {
+            let value = progressbar.val();
+            let start = 0;
+            
+                const loading = () => {
+                    start += 1;
+                    progressbar.val(start);
+                    if (start == value) {
+                    clearInterval(animate);
+                    }
+                };
+                const animate = setInterval(() => loading(), 8);
+            }
+            
+            let $progressbar1 = $('#progressbar-attack');
+            let $progressbar2 = $('#progressbar-defense');
+            let $progressbar3 = $('#progressbar-power');
+            barAnimate($progressbar1);
+            barAnimate($progressbar2);
+            barAnimate($progressbar3);
+
+
+
+    // Récupération de l'affichage des stats en %
+
+        $('.progress-value-attack').html(randomAttack + '%');
+        $('.progress-value-defense').html(randomDefense + '%');
+        $('.progress-value-power').html(randomPower + '%');
+
         
-            const loading = () => {
-                start += 1;
-                progressbar.val(start);
-                if (start == value) {
-                clearInterval(animate);
-                }
-            };
-            const animate = setInterval(() => loading(), 8);
+
+
+
+    // Positionnement de la carte active au centre
+        
+        $.fn.devZoomPosition = function() {
+            this.css({
+                "position": "fixed",
+                "left": "50%",
+                "top": "47%",
+                "transform": "translateX(-50%)",
+                "margin-top": -this.height()/2     
+            });     
         }
-        
-        let $progressbar1 = $('#progressbar-attack');
-        let $progressbar2 = $('#progressbar-defense');
-        let $progressbar3 = $('#progressbar-power');
-        barAnimate($progressbar1);
-        barAnimate($progressbar2);
-        barAnimate($progressbar3);
-        
-        
 
-        
-        // Positionnement de la carte active au centre
-        
-    $.fn.devZoomPosition = function() {
-        this.css({
-            "position": "fixed",
-            "left": "50%",
-            "top": "50%",
-            "transform": "translateX(-50%)",
-            "margin-top": -this.height()/2     
-        });     
-    }
+        $(".dev-zoom").devZoomPosition();
 
-      
 
+
+
+
+
+    // apprition de la Carte courante et masquage des cartes devs
+
+        $(".dev-zoom").fadeIn();
+        $(".dev").css({"opacity": "50%"});
     
 
 
+        // Animation de la pokeball pour des viewport > 768px
 
-
-        // Animation de la pokeball
-
-    $(".nes-pokeball").animate({ left: "+40%"});
-    $(".nes-pokeball"). animate(
-        {rotation: 360}, { duration: 200, step: function(now, fx) { $(this). css({"transform": "rotate("+now+"deg)"}); } } );
-          
- 
-    $(".dev-zoom").devZoomPosition();
-    $(".dev-zoom").fadeIn();
-    $(".dev").css({"opacity": "50%"});
-    $('.progress-value-attack').html(randomAttack + '%');
-    $('.progress-value-defense').html(randomDefense + '%');
-    $('.progress-value-power').html(randomPower + '%');
-   
-
- 
+        var $viewportWidth = $(window).width();
+        console.log($viewportWidth)
+        if($viewportWidth >= 768){
+            $("#pokeball-image img").addClass('turn');
+        } else {
+            $("#pokeball-image img").removeClass('turn');
+        }
 
         
-
-      
-           
           
-       
-       
-
 
     })
 
     
 
     
+    // Evenements à la fermeture de la carte courante
 
-
-  
-
-    $(".dev-zoom i").click(function(){
-        $(".dev-zoom").hide();
-        $(".dev").css({"opacity": "100%"});
-        $("#progressbar-attack").removeClass("is-warning");
-        $("#progressbar-attack").removeClass("is-success");
-        $("#progressbar-attack").removeClass("is-error");
-        $("#progressbar-defense").removeClass("is-warning");
-        $("#progressbar-defense").removeClass("is-success");
-        $("#progressbar-defense").removeClass("is-error");
-        $("#progressbar-power").removeClass("is-warning");
-        $("#progressbar-power").removeClass("is-success");
-        $("#progressbar-power").removeClass("is-error");
-        $(".nes-pokeball").animate({left: "0%"})
-        $(".nes-pokeball"). animate( {rotation: 0});
-    })
+        $(".dev-zoom i").click(function(){
+            $(".dev-zoom").hide();
+            $(".dev").css({"opacity": "100%"});
+            $("#progressbar-attack").removeClass("is-warning");
+            $("#progressbar-attack").removeClass("is-success");
+            $("#progressbar-attack").removeClass("is-error");
+            $("#progressbar-defense").removeClass("is-warning");
+            $("#progressbar-defense").removeClass("is-success");
+            $("#progressbar-defense").removeClass("is-error");
+            $("#progressbar-power").removeClass("is-warning");
+            $("#progressbar-power").removeClass("is-success");
+            $("#progressbar-power").removeClass("is-error");
+            $("#pokeball-image img").removeClass('turn');
+            
+        })

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "nes.css": "^2.3.0"
   }
 }

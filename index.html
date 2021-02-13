@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="node_modules/nes.css/css/nes.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
         <link rel="stylesheet" href="src/css/root.css">
         <link rel="stylesheet" href="src/css/reboot.css">
         <link rel="stylesheet" href="src/css/global.css">
@@ -14,55 +14,70 @@
         <title>Pokedev</title>
     </head>
     <body>
+        <header>
+            <img src="src/img/pokedev.png" alt="police-pokemon" border="0">
+        </header>
+
+        <div class="container">
+            <div id="presentation">
+                <p class="nes-balloon from-left nes-pointer">
+                    Bonjour! Je suis Greg, en formation de développeur web et mobile,
+                    vous pouvez cliquer sur la manette pour continuer ... 
+                    <i class="nes-logo bounce"></i>
+                </p>
+                <img id="presentation-image" src="src/img/promo/pixel/greg.png" alt="photo promo">
+            </div>
+        </div>
+
         <div class="container">
             <div class="devs">
-                <div id="Greg" class="dev dev-1">
-                    <img src="src/img/gabinPixel.png" alt="Greg">
-                    <p>Greg</p>
-                </div>
-                <div id="Nelson" class="dev dev-2">
-                    <img src="src/img/fff.png" alt="Nelson">
+                <div id="Nelson ARAUJO" class="dev dev-1">
+                    <img src="src/img/promo/pixel/nelson.png" alt="Nelson">
                     <p>Nelson</p>
                 </div>
-                <div id="Gabin" class="dev dev-3">
-                    <img  src="src/img/gabinPixel.png" alt="Gabin">
-                    <p>Gabin</p>
+                <div id="Amine BENLAKHDAR" class="dev dev-2">
+                    <img src="src/img/promo/pixel/amine.png" alt="Amine">
+                    <p>Amine</p>
                 </div>
-                <div class="dev dev-4">
-                    <img src="src/img/greg.jpg" alt="greg">
+                <div id="Grégory BOES" class="dev dev-3">
+                    <img  src="src/img/promo/pixel/greg.png" alt="Greg">
                     <p>Greg</p>
                 </div>
-                <div class="dev dev-5">
-                    <img src="src/img/greg.jpg" alt="greg">
+                <div id="Ken BROSSE" class="dev dev-4">
+                    <img src="src/img/promo/pixel/ken.png" alt="Ken">
+                    <p>Ken</p>
+                </div>
+                <div id="Grégory CADET" class="dev dev-5">
+                    <img src="src/img/promo/pixel/gregC.png" alt="gregC">
                     <p>Greg</p>
                 </div>
-                <div class="dev dev-6">
-                    <img src="src/img/greg.jpg" alt="greg">
-                    <p>Greg</p>
+                <div id="Clément DOMINIQUE" class="dev dev-6">
+                    <img src="src/img/promo/pixel/clement.png" alt="clement">
+                    <p>Clément</p>
                 </div>
-                <div class="dev dev-7">
-                    <img src="src/img/greg.jpg" alt="greg">
-                    <p>Greg</p>
+                <div id ="Jonathan DUPAU" class="dev dev-7">
+                    <img src="src/img/promo/pixel/jonathan.png" alt="jonathan">
+                    <p>Jonathan</p>
                 </div>
-                <div class="dev dev-8">
-                    <img src="src/img/greg.jpg" alt="greg">
-                    <p>Greg</p>
+                <div id="Mickael LEPELLETIER" class="dev dev-8">
+                    <img  src="src/img/promo/pixel/mickael.png" alt="Mickael">
+                    <p>Mickael</p>
                 </div>
-                <div class="dev dev-9">
-                    <img src="src/img/greg.jpg" alt="greg">
-                    <p>Greg</p>
+                <div  id="Geoffrey MIARD" class="dev dev-9">
+                    <img src="src/img/promo/pixel/geoffrey.png" alt="Geoffrey">
+                    <p>Geoffrey</p>
                 </div>
-                <div class="dev dev-10">
-                    <img src="src/img/greg.jpg" alt="greg">
-                    <p>Greg</p>
+                <div id="Sara MOSCARDELLI" class="dev dev-10">
+                    <img src="src/img/promo/pixel/sara.png" alt="Sara">
+                    <p>Sara</p>
                 </div>
-                <div class="dev dev-11">
-                    <img src="src/img/greg.jpg" alt="greg">
-                    <p>Greg</p>
+                <div id="Paul SOLARI" class="dev dev-11">
+                    <img src="src/img/promo/pixel/paul.png" alt="Paul">
+                    <p>Paul</p>
                 </div>
-                <div class="dev dev-12">
-                    <img src="src/img/greg.jpg" alt="greg">
-                    <p>Greg</p>
+                <div id="Xin TAO" class="dev dev-12">
+                    <img src="src/img/promo/pixel/xin.png" alt="Xin">
+                    <p>Xin</p>
                 </div>
                 
             </div> 
@@ -87,7 +102,6 @@
                     <p>Pouvoirs</p>
                     <progress id="progressbar-power" class="progressbar power nes-progress" max="100" value="60"></progress>
                     <span class="progress-value-power">60%</span>
-                    <a class="dev-link" href="" target="_blank"><i class="nes-pokeball"></i></a>
                 </div>
                     <a id="pokeball-image" class="dev-link" href="" target="_blank"><img src="src/img/pokeball_alpha.png" alt="contact"></a>
             </div>  
