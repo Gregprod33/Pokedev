@@ -1,14 +1,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
 body {
 font-family: 'Press Start 2P', cursive;
 background-image: url('../img/nintendo.png');
 background-repeat: repeat-y;
 background-size: 130%;
+margin: 
+
 
 }
 
+
+h1 {
+    font-size: 1.3em;
+    color: var(--color-yellow);
+    padding: 20px 0;
+}
 
 .dev { 
     border-radius: var(--radius); 
@@ -26,3 +42,7 @@ background-size: 130%;
     margin-bottom: 0px;
 }
 
+
+span {
+    color: var(--color-primary);
+}

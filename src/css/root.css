@@ -12,5 +12,8 @@
     --color-11: rgb(39, 125, 161);
     --color-12: rgb(156, 137, 184);
     --color-grey: rgb(158, 158, 158);
+    --color-primary: #209CEE;
+    --color-yellow: #F7D51D;
+    --color-green: #92CC41;
     --radius: 20px;
 }
