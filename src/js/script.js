@@ -5,8 +5,17 @@ $(() => {
     var $bulle1 = $('#bulle-1');
     var $bulle2 = $('#bulle-2');
     var $bulle3 = $('#bulle-3');
-    var $bouton = $('[type="button"]');
+    var $bouton = $('#btn-formulaire');
+    var $manette = $('#manette-presentation');
     
+
+
+   
+        $manette.on('click', function() {
+            $("#pokedev").fadeIn(1500);
+        })
+
+
         $("#btn-pokedev").on('click', function() {
             $("#pokedev").fadeIn(1500);
         })
@@ -23,6 +32,7 @@ $(() => {
             $('#presentation-1').removeClass('off');
             $('#presentation-image').removeClass('off');
             $('#presentation-1').addClass('on');
+            
         })
        
         
@@ -34,6 +44,11 @@ $(() => {
             $("#presentation-1").addClass('off');
             $bulle2.html('Je suis en recherche de stage pour la période du ' + '<span>' + ' 10 mai au 22 juillet.' + '</span>' + '<span>'+ '<br>' + ' Passionné, autonome' + '</span>' + ' et' + '<span>' + ' engagé' + '</span>' + ' , je souhaiterais participer activement à des' + '<span>' + ' projets' + '</span>' + ' en entreprise et ainsi pouvoir' + '<span>' + ' progresser' + '</span>' + ' tout en collaborant avec une équipe confirmée...'     + '<i class="nes-logo bounce"></i>');
             $("#presentation-2").removeClass('off');
+            $('#pokemon-2').removeClass('off');
+            $('#pokemon-2').effect("pulsate");
+            $('#pokemon-2').animate({
+                right: "+90%"
+            }, 7000);
         });
 
 
@@ -43,12 +58,39 @@ $(() => {
             $bulle3.html("Actuellement sur le" + "<span>" + " Campus du Lac de Bordeaux" + "</span>" + ", je partage cette recherche de stage avec mes camarades et à ce titre j'aimerais vous présenter notre promo façon" + "<span>" + " Pokédex" + "</span>" + ",  cliquez sur la manette pour le découvrir..." + '<i class="nes-logo bounce"></i>');
             $("#presentation-3").removeClass('off');
 
+           
+                $("#pokemon-3").removeClass('off');
+                $("#pokemon-3").effect("pulsate");
+                $("#pokemon-2").addClass('off');
+                $("#pokemon-2-reverse").removeClass('off');
+                $('#pokemon-2-reverse').animate({
+                    left: "+80%"
+                }, 7000);
+                $('#pokemon-3').animate({
+                    left: "+70%"
+                }, 7000);
+                $("#pokemon-3").effect("pulsate");
+                $("#pokemon-2-reverse").effect("pulsate");
+                $("#pokemon-2-reverse").fadeOut();
+                $("#pokemon-3").fadeOut();
+
+
+
         });
 
 
         
         $bulle3.on('click', function() {
             $("#pokedev").fadeIn(1500);
+            $("#presentation-3").addClass('off');
+            $("#presentation-image").addClass('off');
+            $('#presentation-container').removeClass('no-padding');
+            $('#presentation-container').removeClass('bg-nintendo');
+            $("#pokemon-2-reverse").addClass("off");
+            $("#pokemon-3").addClass("off");
+            $('.infos-presentation').removeClass('off');
+            $('.formulaire').show();
+
         });
 
 
@@ -181,7 +223,7 @@ $(() => {
                 "image": "paul.png",
                 "attack": randomAttack,
                 "defense": randomDefense,
-                "power": randomPower,
+                "power": randomPower
                 
             },
 
@@ -192,6 +234,7 @@ $(() => {
                 "attack": randomAttack,
                 "defense": randomDefense,
                 "power": randomPower,
+                "link": "https://www.linkedin.com/in/xin-tao-515287203/"
                 
             }
 
