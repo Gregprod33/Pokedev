@@ -29,6 +29,7 @@ $(() => {
             $('#presentation-container').addClass('bg-nintendo');
             $bulle1.html('Bonjour ' + '<span>' + $prenom + '</span>' + ', je suis ' + '<span>' + 'Greg' + '</span>' + ', en formation de' + '<span>' + ' développeur web et mobile' + '</span>' + '. Cliquez sur la manette pour lire la suite...' + '<i class="nes-logo bounce"></i>' );
             $('.formulaire').hide();
+            $('#presentation').addClass('full');
             $('#presentation-1').removeClass('off');
             $('#presentation-image').removeClass('off');
             $('#presentation-1').addClass('on');
@@ -44,11 +45,19 @@ $(() => {
             $("#presentation-1").addClass('off');
             $bulle2.html('Je suis en recherche de stage pour la période du ' + '<span>' + ' 10 mai au 22 juillet.' + '</span>' + '<span>'+ '<br>' + ' Passionné, autonome' + '</span>' + ' et' + '<span>' + ' engagé' + '</span>' + ' , je souhaiterais participer activement à des' + '<span>' + ' projets' + '</span>' + ' en entreprise et ainsi pouvoir' + '<span>' + ' progresser' + '</span>' + ' tout en collaborant avec une équipe confirmée...'     + '<i class="nes-logo bounce"></i>');
             $("#presentation-2").removeClass('off');
-            $('#pokemon-2').removeClass('off');
-            $('#pokemon-2').effect("pulsate");
-            $('#pokemon-2').animate({
-                right: "+90%"
-            }, 7000);
+            var $viewportWidth = $(window).width();
+            if($viewportWidth >= 768){
+                $('#pokemon-2').removeClass('off');
+                $('#pokemon-2').effect("pulsate");
+                $('#pokemon-2').animate({
+                    right: "+90%"
+                }, 6000);
+            }
+    
+           
+                
+            
+            
         });
 
 
@@ -58,23 +67,23 @@ $(() => {
             $bulle3.html("Actuellement sur le" + "<span>" + " Campus du Lac de Bordeaux" + "</span>" + ", je partage cette recherche de stage avec mes camarades et à ce titre j'aimerais vous présenter notre promo façon" + "<span>" + " Pokédex" + "</span>" + ",  cliquez sur la manette pour le découvrir..." + '<i class="nes-logo bounce"></i>');
             $("#presentation-3").removeClass('off');
 
-           
+            var $viewportWidth = $(window).width();
+            if($viewportWidth >= 768){
                 $("#pokemon-3").removeClass('off');
                 $("#pokemon-3").effect("pulsate");
                 $("#pokemon-2").addClass('off');
                 $("#pokemon-2-reverse").removeClass('off');
                 $('#pokemon-2-reverse').animate({
                     left: "+80%"
-                }, 7000);
+                }, 6000);
                 $('#pokemon-3').animate({
                     left: "+70%"
-                }, 7000);
+                }, 6000);
                 $("#pokemon-3").effect("pulsate");
                 $("#pokemon-2-reverse").effect("pulsate");
                 $("#pokemon-2-reverse").fadeOut();
-                $("#pokemon-3").fadeOut();
-
-
+                $("#pokemon-3").fadeOut(); 
+            } 
 
         });
 
@@ -104,16 +113,11 @@ $(() => {
     // Récupération du nom du dev
 
     card.click(function() {
-       
         let currentDev = $(this).attr("id");
-
-
         // Génération des stats aléatoires
         let randomAttack = Math.floor(Math.random()*80 + 20);
         let randomDefense = Math.floor(Math.random()*80 + 20);
         let randomPower = Math.floor(Math.random()*80 + 20);
-
-
 
         // Liste des dev avec leurs statistiques
         let devs = {
@@ -197,7 +201,6 @@ $(() => {
             },
 
 
-            
             "Geoffrey MIARD": {
                 "description": "Geoffrey aime par dessus tout sortir de sa zone de confort pour relever de nouveaux défis et aller au bout de lui même. Son parcours au sein de la Marine Nationale témoigne de sa rigueur. Point fort: la concentration. Point faibe: l'entrechat.",
                 "image": "geoffrey.png",

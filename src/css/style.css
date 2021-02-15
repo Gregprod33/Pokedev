@@ -1,16 +1,48 @@
+
+/*========================*/
+/*======FONT SIZES========*/
+/*========================*/
+
+.infos-pokedev { font-size: 0.9em; }
+
+
+
+button, p, li, footer p, .instructions-presentation, #formulaire-presentation { font-size: 0.8em ; }
+
+h1 {
+
+    line-height: 1.1em;
+    font-size: 1.2em;
+}
+
+.nes-balloon {font-size: 0.9em; }
+
+
+ 
+
+
+
 /*=================+===*/
 /*=======HEADER========*/
 /*====================*/
 
-#menu-container{
-    background-image: url('/src/img/background-nes.png');
+#menu-container {
+    background-image: url('../img/background-nes.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position-y: -200px;
+    background-position-y: -300px;
     border-bottom: 5px solid var(--color-yellow);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
   
 }
+
+
 
 
 .menu-content {
@@ -21,6 +53,7 @@
     width: 50px;
     margin: 0 15px;
     margin-bottom: 8px;
+    display: none;
 }
 
 
@@ -49,10 +82,13 @@ header {
 }
 
 header img {
-    width: 500px;
+    max-width: 100%;
     margin: 50px 0;
     display: inline-block;
+    padding: 0 10px;
+     
 }
+
 
 .off {
     display: none;
@@ -68,46 +104,45 @@ header img {
 
 
 #hero{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 50px; 
     margin-bottom: 100px;
     background-color: var(--color-primary);
     border: 4px solid var(--color-yellow);
-    
 }
 
 .hero-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;     
+    gap: 15px;   
+    justify-content: center;  
 }
 
 
-.hero-card {
-    grid-column: span 4;
-}
+
 
 #hero p {
     color: white;
     text-align: center;
+
 }
 
 
 [alt="pikachu"] {
-    width: 200px;
+    max-width: 150px;
     
 }
 
 
 [alt="pokeball"] {
-    width: 200px;
+    max-width: 150px;
 }
 
 
 [alt="trophy"] {
-    width: 200px;
+    max-width: 150px;
 }
 
 
@@ -117,6 +152,9 @@ header img {
 /*=======================*/
 /*========CONCEPT========*/
 /*=======================*/
+
+
+
 
 #concept {
     text-align: left;
@@ -141,13 +179,17 @@ header img {
 /*=========================*/
 /*======PRESENTATION=======*/
 /*=========================*/
-.yellow { color: var(--color-yellow);}
-
-#manette-presentation {
-    right: 50%;
-    transform: translateX(30px);
-    
+.full {
+    max-width: 100%;
 }
+
+
+
+
+.yellow { color: var(--color-yellow) };
+
+
+
 .no-padding {
     padding: 5px 0 0 0;
 }
@@ -170,11 +212,12 @@ header img {
     display: flex;
     flex-direction: column;
     
+    
 }
 
 
 .bg-nintendo {
-    background-image: url('/src/img/background-nes.png');
+    background-image: url('../img/background-nes.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -210,7 +253,13 @@ header img {
 
 
 #entrer-prenom {
-    color: white;
+    color: var(--color-yellow);
+   
+}
+
+#btn-formulaire {
+
+    margin-top: 10px;
 }
 
 
@@ -223,7 +272,7 @@ header img {
 
 
 #presentation-image {
-    width: 200px;
+    width: 150px;
     z-index: 10;
     
 }
@@ -278,14 +327,14 @@ img#pokemon-2 {
     position: absolute;
     width: 60px;
     right: 5%;
-    top: 60%;   
+    top: 75%;   
 }
 
 img#pokemon-2-reverse {
     position: absolute;
     width: 60px;
     left: 5%;
-    top: 60%;
+    top: 75%;
      
 }
 
@@ -293,7 +342,7 @@ img#pokemon-3 {
     position: absolute;
     width: 60px;
     left: 0%;
-    top: 60%;
+    top: 75%;
      
 }
 
@@ -312,8 +361,11 @@ img#pokemon-3 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 15px;
-    
-    
+      
+}
+
+.devs p {
+    font-size: 0.8em;
 }
 
 
@@ -329,6 +381,8 @@ img#pokemon-3 {
 .dev-10 { background-color: var(--color-10); }
 .dev-11 { background-color: var(--color-11); }
 .dev-12 { background-color: var(--color-12); }
+
+
 
 .devs .dev { 
     
@@ -484,6 +538,7 @@ img#pokemon-3 {
 
 #retour-menu { 
     text-align: center;
+    margin-top: 100px;
     
 }
 
@@ -511,10 +566,10 @@ img[alt="linkedIn"] { width: 60px; }
 /*=============================*/
 
 @media screen and (min-width: 640px) {
-    .devs .dev {  
-        grid-column: span 4;
+    .devs .dev {  grid-column: span 4; }
+     p {
+        font-size: 1em;
     }
-
 
 }
 
@@ -524,7 +579,37 @@ img[alt="linkedIn"] { width: 60px; }
 
 @media screen and (min-width: 768px)  {
 
+
+    .infos-pokedev { font-size: 1.1em; }
+
+    button, p, li, footer p, .instructions-presentation, #formulaire-presentation { font-size: 1em; }
+    
+
+    h1 { font-size: 1.4em; }
+    
   
+
+
+
+    #hero{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 50px; 
+        margin-bottom: 100px;
+    }
+
+    .hero-card { grid-column: span 4; }
+        
+   
+    #btn-formulaire { margin: 0 0 0 30px; }
+
+    #presentation-image {
+        width: 200px;
+        z-index: 10;
+        
+    }
+
+
 
     .dev-progress {
         display: block;
@@ -564,6 +649,12 @@ img[alt="linkedIn"] { width: 60px; }
 
 
 @media screen and (min-width: 990px)  {
+    
+    #retro-star {
+        display: inline-block;
+    }
+
+
 
     .devs .dev {  
         grid-column: span 3;

@@ -18,7 +18,7 @@
         
         <header>
             <div id="menu-container">
-                <img src="src/img/pokedev.png" alt="police-pokemon" border="0">
+                <img src="src/img/pokedev.png" alt="logo" border="0">
                 <div class="menu-content">
                     <img id="retro-star" class="scale" src="src/img/Retro Star.png" alt="retro star" >
                     <a href="#concept"><button type="button" class="nes-btn is-success">Concept</button></a>
@@ -54,7 +54,7 @@
             <div id="concept" class="nes-container with-title is-dark is-centered">
                 <p class="title">CONCEPT</p>
                 <h1>LE POKEDEV QU'EST-CE QUE C'EST ?</h1>
-                <p>Le <span>pokédev</span> reprend le principe du <span>pokédex</span>: de petites cartes informatives sur les compétences de chaque avatar, un moyen ludique de découvrir les futurs <span>développeurs</span> du campus du lac 😊</p>
+                <p class="infos-pokedev">Le <span>pokédev</span> reprend le principe du <span>pokédex</span>: de petites cartes informatives sur les compétences de chaque avatar, un moyen ludique de découvrir les futurs <span>développeurs</span> du campus du lac 😊</p>
                 <div class="lists">
                     <ul class="nes-list is-circle">
                         <li><br><i class="fas fa-check"></i> Naviguez dans les cartes découvrez notre équipe</li>
@@ -68,17 +68,17 @@
                 </div>
             </div>
         </div>
-
-        <div id="presentation">
+        
+        <div id="presentation" class="container">
             <div id="presentation-container" class="nes-container with-title is-dark is-centered">
                 <p class="title">PRESENTATION</p>
                 <div class="infos-presentation" >
                     <h1>QUELQUES INFORMATIONS SUR LA DEMARCHE</h1>
-                    <p>Vous pouvez passer cette étape et accéder directement au Pokédev ou entrer votre prénom et cliquez sur <span class="yellow">"enregistrer"</span> pour en savoir d'avantage...</p>
-                    <p>Accédez directement au <span class="yellow">Pokédev</span> en cliquant sur la manette</p>
-                    <a href="#pokedev"><i id="manette-presentation" class="nes-logo"></i></a>
+                    <p class="instructions-presentation">Vous pouvez passer cette étape et accéder directement au Pokédev ou entrer votre prénom et cliquez sur <span class="yellow">"enregistrer"</span> pour en savoir d'avantage...</p>
+                    <p class="instructions-presentation">Accédez directement au <span class="yellow">Pokédev</span> en cliquant sur la <span class="yellow">manette</span></p>
+                    <a id="manette-presentation" href="#pokedev"><img  class="bounce"src="src/img/manette-alpha.png"></a>
                 </div>
-
+                
                 <div id="formulaire-presentation">
                     <div class="formulaire nes-field is-inline">
                         <label id="entrer-prenom" for="warning_field">Entrez votre prénom</label>
@@ -86,18 +86,15 @@
                         <button id="btn-formulaire" type="button" class="nes-btn is-warning">Enregistrer</button>
                     </div>
                     <div id="presentation-1" class="off">
-                        <p id="bulle-1" class="nes-balloon from-left nes-pointer">
-                            <i id="manette" class="nes-logo bounce"></i>
+                        <p id="bulle-1" class="nes-balloon from-left nes-pointer">  
                         </p>  
                     </div>
                     <div id="presentation-2" class="off">
-                        <p id="bulle-2" class="nes-balloon from-left nes-pointer">
-                            <i id="manette" class="nes-logo bounce"></i>
+                        <p id="bulle-2" class="nes-balloon from-left nes-pointer">  
                         </p>  
                     </div>
-                    <div id="presentation-3" class="off">
-                        <a href="#pokedev"><p id="bulle-3" class="nes-balloon from-left nes-pointer">
-                            <i id="manette" class="nes-logo bounce"></i>
+                    <div id="presentation-3" class=" off">
+                        <a href="#pokedev"><p id="bulle-3" class="nes-balloon from-left nes-pointer">     
                         </p></a>
                     </div>
                     <img id="presentation-image" class="off" src="src/img/MarioGreg.png" alt="photo promo">
@@ -107,9 +104,9 @@
                 </div> 
             </div>
         </div>
+        
 
-       
-
+    
         <div class="container">
             <div id="pokedev" class="nes-container with-title is-dark is-centered off">
                 <p class="title">POKEDEV</p>
@@ -162,7 +159,6 @@
                         <img src="src/img/promo/pixel/xin.png" alt="Xin">
                         <p>Xin</p>
                     </div>
-                    
                 </div>
             </div> 
         </div>
