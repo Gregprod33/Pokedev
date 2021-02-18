@@ -8,9 +8,7 @@ $(() => {
     var $bouton = $('#btn-formulaire');
     var $manette = $('#manette-presentation');
     
-
-
-   
+    
         $manette.on('click', function() {
             $("#pokedev").fadeIn(1500);
         })
@@ -39,11 +37,9 @@ $(() => {
         
         
         
-        
-
         $bulle1.on('click', function() {
             $("#presentation-1").addClass('off');
-            $bulle2.html('Je suis en recherche de stage pour la période du ' + '<span>' + ' 10 mai au 22 juillet.' + '</span>' + '<span>'+ '<br>' + ' Passionné, autonome' + '</span>' + ' et' + '<span>' + ' engagé' + '</span>' + ' , je souhaiterais participer activement à des' + '<span>' + ' projets' + '</span>' + ' en entreprise et ainsi pouvoir' + '<span>' + ' progresser' + '</span>' + ' tout en collaborant avec une équipe confirmée...'     + '<i class="nes-logo bounce"></i>');
+            $bulle2.html('Je suis en recherche de stage pour la période du ' + '<span>' + ' 10 mai au 22 juillet.' + '</span>' + '<span>'+ '<br>' + ' Passionné, autonome' + '</span>' + ' et' + '<span>' + ' engagé' + '</span>' + ' , je souhaiterais participer activement à des' + '<span>' + ' projets' + '</span>' + ' en entreprise et ainsi pouvoir' + '<span>' + ' progresser' + '</span>' + ' tout en collaborant avec une équipe confirmée.' + '<br>' + 'Cliquez sur la manette pour lire la suite...' + '<i class="nes-logo bounce"></i>');
             $("#presentation-2").removeClass('off');
             var $viewportWidth = $(window).width();
             if($viewportWidth >= 768){
@@ -54,9 +50,7 @@ $(() => {
                 }, 6000);
             }
     
-           
-                
-            
+              
             
         });
 
@@ -105,11 +99,6 @@ $(() => {
 
    
 
-
-
-    
-
-
     // Récupération du nom du dev
 
     card.click(function() {
@@ -136,6 +125,8 @@ $(() => {
                 "attack": randomAttack,
                 "defense": randomDefense,
                 "power": randomPower,
+                "link": "#index.html"
+                
                 
             },
 
@@ -226,7 +217,8 @@ $(() => {
                 "image": "paul.png",
                 "attack": randomAttack,
                 "defense": randomDefense,
-                "power": randomPower
+                "power": randomPower,
+                "link": "#index.html"
                 
             },
 
@@ -237,10 +229,8 @@ $(() => {
                 "attack": randomAttack,
                 "defense": randomDefense,
                 "power": randomPower,
-                "link": "https://www.linkedin.com/in/xin-tao-515287203/"
-                
+                "link": "https://www.linkedin.com/in/xin-tao-515287203/"  
             }
-
         }
 
 
@@ -252,9 +242,8 @@ $(() => {
         $(".defense").attr("value", devs[currentDev].defense);
         $(".power").attr("value", devs[currentDev].power);
         $(".dev-link").attr("href", devs[currentDev].link);
-
-
-
+        
+        
         // Couleur des progrssbars en fonction des stats
         
         if(($(".attack").val() <= 60) && ($(".attack").val() >= 40)) {
@@ -291,8 +280,6 @@ $(() => {
             $('.progress-value-power').css("color", "#92CC41");
         }
 
-
-
         // Animation des barres
 
             const barAnimate = (progressbar) => {
@@ -317,7 +304,6 @@ $(() => {
                 barAnimate($progressbar3);
 
 
-
         // Récupération de l'affichage des stats en %
 
             $('.progress-value-attack').html(randomAttack + '%');
@@ -325,8 +311,6 @@ $(() => {
             $('.progress-value-power').html(randomPower + '%');
 
             
-
-
 
         // Positionnement de la carte active au centre
             
@@ -344,9 +328,6 @@ $(() => {
 
 
 
-
-
-
         // apprition de la Carte courante et masquage des cartes devs
 
             $(".dev-zoom").fadeIn();
@@ -356,7 +337,7 @@ $(() => {
         
 
 
-            // Animation de la pokeball pour des viewport > 768px
+        // Animation de la pokeball pour des viewport > 768px
 
             var $viewportWidth = $(window).width();
             if($viewportWidth >= 768){
@@ -364,38 +345,31 @@ $(() => {
             } else {
                 $("#pokeball-image img").removeClass('turn');
             }
-
-            
-            
+   
 
         })
 
         
 
-        
-        // Evenements à la fermeture de la carte courante
+    
+    // Evenements à la fermeture de la carte courante
 
-            $(".dev-zoom i").click(function(){
-                $(".dev-zoom").fadeOut();
-                $(".dev").css({"opacity": "100%"});
-                $("#progressbar-attack").removeClass("is-warning");
-                $("#progressbar-attack").removeClass("is-success");
-                $("#progressbar-attack").removeClass("is-error");
-                $("#progressbar-defense").removeClass("is-warning");
-                $("#progressbar-defense").removeClass("is-success");
-                $("#progressbar-defense").removeClass("is-error");
-                $("#progressbar-power").removeClass("is-warning");
-                $("#progressbar-power").removeClass("is-success");
-                $("#progressbar-power").removeClass("is-error");
-                $("#pokeball-image img").removeClass('turn');
-                $("header").removeClass('filter');
-                $(".devs").removeClass('filter');
-                $(".nes-container").removeClass('filter');
-                
-            })
-
-
-
-
+        $(".dev-zoom i").click(function(){
+            $(".dev-zoom").fadeOut();
+            $(".dev").css({"opacity": "100%"});
+            $("#progressbar-attack").removeClass("is-warning");
+            $("#progressbar-attack").removeClass("is-success");
+            $("#progressbar-attack").removeClass("is-error");
+            $("#progressbar-defense").removeClass("is-warning");
+            $("#progressbar-defense").removeClass("is-success");
+            $("#progressbar-defense").removeClass("is-error");
+            $("#progressbar-power").removeClass("is-warning");
+            $("#progressbar-power").removeClass("is-success");
+            $("#progressbar-power").removeClass("is-error");
+            $("#pokeball-image img").removeClass('turn');
+            $("header").removeClass('filter');
+            $(".devs").removeClass('filter');
+            $(".nes-container").removeClass('filter');
+        })
 
 })

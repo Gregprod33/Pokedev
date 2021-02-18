@@ -1,24 +1,24 @@
-
 /*========================*/
 /*======FONT SIZES========*/
 /*========================*/
 
 .infos-pokedev { font-size: 0.9em; }
 
-
-
-button, p, li, footer p, .instructions-presentation, #formulaire-presentation { font-size: 0.8em ; }
-
-h1 {
-
-    line-height: 1.1em;
-    font-size: 1.2em;
+button,
+p,
+li,
+footer p,
+.instructions-presentation,
+#formulaire-presentation {
+  font-size: 0.8em;
 }
 
-.nes-balloon {font-size: 0.9em; }
+h1 {
+  line-height: 1.1em;
+  font-size: 1.2em;
+}
 
-
- 
+.nes-balloon { font-size: 0.9em; }
 
 
 
@@ -27,125 +27,88 @@ h1 {
 /*====================*/
 
 #menu-container {
-    background-image: url('../img/background-nes.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position-y: -300px;
-    border-bottom: 5px solid var(--color-yellow);
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-  
+  background-image: url("../img/background-nes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: -270px;
+  border-bottom: 5px solid var(--color-yellow);
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-
-.menu-content {
-    margin-bottom: 50px;
-}
+.menu-content { margin-bottom: 50px; }
 
 #retro-star {
-    width: 50px;
-    margin: 0 15px;
-    margin-bottom: 8px;
-    display: none;
+  width: 70px;
+  margin: 0 15px;
+  margin-bottom: 8px;
+  display: none;
 }
-
 
 .scale {
-    animation-name: myScale;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
+  animation-name: myScale;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
 }
-
 
 @keyframes myScale {
-    0% { transform: scale(1); }
-    10% { transform: scale(0.7); }
-    50% { transform:  scale(1.020); }
-    100% { transform: scale(1); }  
+  0% { transform: scale(1); }
+  10% { transform: scale(0.7); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
 }
 
-
-
 header {
-    text-align: center;
-    margin-bottom: 100px;
-  
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 header img {
-    max-width: 100%;
-    margin: 50px 0;
-    display: inline-block;
-    padding: 0 10px;
-     
+  max-width: 100%;
+  margin: 50px 0;
+  display: inline-block;
+  padding: 0 10px;
 }
 
-
-.off {
-    display: none;
-}
-
+.off { display: none; }
 
 /*=========================*/
 /*===========HERO==========*/
 /*=========================*/
 
-
-
-
-
-#hero{
-    display: flex;
-    flex-direction: column;
-    gap: 50px; 
-    margin-bottom: 100px;
-    background-color: var(--color-primary);
-    border: 4px solid var(--color-yellow);
+#hero {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 100px;
+  background-color: var(--color-primary);
+  border: 4px solid var(--color-yellow);
 }
 
 .hero-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;   
-    justify-content: center;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
 }
-
-
-
 
 #hero p {
-    color: white;
-    text-align: center;
-
+  color: white;
+  text-align: center;
 }
 
+[alt="pikachu"] { max-width: 150px; }
 
-[alt="pikachu"] {
-    max-width: 150px;
-    
-}
+[alt="pokeball"] { max-width: 150px; }
 
-
-[alt="pokeball"] {
-    max-width: 150px;
-}
-
-
-[alt="trophy"] {
-    max-width: 150px;
-}
-
-
+[alt="trophy"] { max-width: 150px; }
 
 
 
@@ -153,221 +116,155 @@ header img {
 /*========CONCEPT========*/
 /*=======================*/
 
-
-
-
 #concept {
-    text-align: left;
-    margin-bottom: 100px;
+  text-align: left;
+  margin-bottom: 100px;
 }
 
 #concept img {
-    width: 60px;
-    padding-bottom: 10px;
+  width: 60px;
+  padding-bottom: 10px;
 }
 
-#concept h1 {
-    text-align: center;
-}
+#concept h1 { text-align: center; }
 
-#concept i {
-    color: var(--color-green);
-}
+#concept i { color: var(--color-green); }
 
 
 
 /*=========================*/
 /*======PRESENTATION=======*/
 /*=========================*/
-.full {
-    max-width: 100%;
-}
 
+.full { max-width: 100%; }
 
+.yellow { color: var(--color-yellow); }
 
-
-.yellow { color: var(--color-yellow) };
-
-
-
-.no-padding {
-    padding: 5px 0 0 0;
-}
-
+.no-padding { padding: 5px 0 0 0; }
 
 #presentation-container {
-    margin-bottom: 100px;
-    background-color: var(--color-primary);
-    display: flex;
-    flex-direction: column;
-    position: relative;
-   
+  margin-bottom: 100px;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
-
 
 #formulaire-presentation {
-    max-width: 800px;
-    align-self: center;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    
-    
+  max-width: 800px;
+  align-self: center;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
 }
-
 
 .bg-nintendo {
-    background-image: url('../img/background-nes.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    height: 100%;
-} 
-
-
-
-.nes-input:focus {
-    border: 6px solid var(--color-green) !important;
+  background-image: url("../img/background-nes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
 }
 
+.nes-input:focus { border: 6px solid var(--color-green) !important; }
 
-
-#bulle-1, #bulle-2, #bulle-3 {
-    color: #212529;
-    text-align: left;
-    
+#bulle-1,
+#bulle-2,
+#bulle-3 {
+  color: #212529;
+  text-align: left;
 }
 
 .nes-container {
-    margin-top: 150px;
-    border-color: var(--color-yellow) !important; 
-    
-    
+  margin-top: 150px;
+  border-color: var(--color-yellow) !important;
 }
 
-.title {
-    color: var(--color-primary)  !important;
-    
-}
+.title { color: var(--color-primary) !important; }
 
+#entrer-prenom { color: var(--color-yellow); }
 
+#btn-formulaire { margin-top: 10px; }
 
-#entrer-prenom {
-    color: var(--color-yellow);
-   
-}
-
-#btn-formulaire {
-
-    margin-top: 10px;
-}
-
-
-.nes-input:focus {
-    border: 6px solid var(--color-primary);
-}
-
-
-
-
+.nes-input:focus { border: 6px solid var(--color-primary); }
 
 #presentation-image {
-    width: 150px;
-    z-index: 10;
-    
+  width: 150px;
+  z-index: 10;
 }
-
-
-
 
 .nes-logo {
-    margin-top: 15px;
-    float: right;
+  margin-top: 15px;
+  float: right;
 }
-
-
 
 .bounce {
-    animation-name: myBounce;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
+  animation-name: myBounce;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
 }
 
-
 @keyframes myBounce {
-    0% { transform: translateY(0);}
-    10% { transform:translateY(0); }
-    30% { transform: translateY(-8px);}
-    50% { transform: translateY(0);}
-    100% { transform: scale(1, 1) translateY(0);}
-    
+  0% { transform: translateY(0); }
+  10% { transform: translateY(0); }
+  30% { transform: translateY(-8px); }
+  50% { transform: translateY(0); }
+  100% { transform: scale(1, 1) translateY(0); }
 }
 
 .bounce-2 {
-    animation-name: myBounce;
-    animation-duration: 0.5s;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
+  animation-name: myBounce;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
 }
 
-
 @keyframes myBounce {
-    0% { transform: translateY(0);}
-    10% { transform:translateY(0); }
-    30% { transform: translateY(-3px);}
-    50% { transform: translateY(0);}
-    100% { transform: translateY(0);}
-    
+  0% { transform: translateY(0); }
+  10% { transform: translateY(0); }
+  30% { transform: translateY(-3px); }
+  50% { transform: translateY(0); }
+  100% { transform: translateY(0); }
 }
 
 img#pokemon-2 {
-    position: absolute;
-    width: 60px;
-    right: 5%;
-    top: 75%;   
+  position: absolute;
+  width: 60px;
+  right: 5%;
+  top: 75%;
 }
 
 img#pokemon-2-reverse {
-    position: absolute;
-    width: 60px;
-    left: 5%;
-    top: 75%;
-     
+  position: absolute;
+  width: 60px;
+  left: 5%;
+  top: 75%;
 }
 
 img#pokemon-3 {
-    position: absolute;
-    width: 60px;
-    left: 0%;
-    top: 75%;
-     
+  position: absolute;
+  width: 60px;
+  left: 0%;
+  top: 75%;
 }
-
 
 /*=======================*/
 /*========POKEDEV========*/
 /*======================*/
 
-
-.filter {
-    filter: grayscale(1);
-}
+.filter { filter: grayscale(1); }
 
 .devs {
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 15px;
-      
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
 }
 
-.devs p {
-    font-size: 0.8em;
-}
-
+.devs p { font-size: 0.8em; }
 
 .dev-1 { background-color: var(--color-1); }
 .dev-2 { background-color: var(--color-2); }
@@ -382,182 +279,140 @@ img#pokemon-3 {
 .dev-11 { background-color: var(--color-11); }
 .dev-12 { background-color: var(--color-12); }
 
-
-
-.devs .dev { 
-    
-    transition: all, 0.5s;
-    grid-column: span 6;
-    box-shadow: 2px 2px 2px black;
+.devs .dev {
+  transition: all, 0.5s;
+  grid-column: span 6;
+  box-shadow: 2px 2px 2px black;
 }
 
-
-.devs .dev:hover { 
-    transform: scale(1.025);   
-}
-
-
-
-    
+.devs .dev:hover { transform: scale(1.025); }
 
 /*=====================*/
 /*=======DEV ZOOM======*/
 /*=====================*/
 
-
 .dev-zoom {
-    background-color: rgb(37, 37, 39);
-    max-width: 100%;
-    display: none;
-    color: white;
-    padding: 25px 10px 0px 10px;
-    border-radius: var(--radius); 
-    text-align: center;
-    box-shadow: 2px 2px 2px black;
-    
+  background-color: rgb(37, 37, 39);
+  max-width: 100%;
+  display: none;
+  color: white;
+  padding: 25px 10px 0px 10px;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 2px 2px 2px black;
 }
-
 
 .dev-description {
-    text-align: left;
-    margin-bottom: 0;
+  text-align: left;
+  margin-bottom: 0;
 }
 
-
 .photo {
-    width: 40%;
-    float: left;  
-    display: none;
+  width: 40%;
+  float: left;
+  display: none;
 }
 
 .fa-times-circle {
-    position: absolute;
-    top: 8px;
-    right: 10px;
-    color:#E76E55;
-    z-index: 10;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  color: #e76e55;
+  z-index: 10;
 }
 
-
-#dev-infos { 
-    text-align: center; 
-    margin-bottom: 15px;
+#dev-infos {
+  text-align: center;
+  margin-bottom: 15px;
 }
 
-#dev-infos p { 
-    padding: 0 8px;
-    word-wrap: break-word;}
-
-
+#dev-infos p {
+  padding: 0 8px;
+  word-wrap: break-word;
+}
 
 .dev-name {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-
-
-.dev-progress{
-    display:none;
-}
-
+.dev-progress { display: none; }
 
 #dev-stats p {
-    margin-bottom: 0;
-    margin-left: 3px;
-    font-size: 0.8em;
-    color: var(--color-grey);
-     
+  margin-bottom: 0;
+  margin-left: 3px;
+  font-size: 0.8em;
+  color: var(--color-grey);
 }
 
-.progress-value-attack, .progress-value-defense, .progress-value-power { 
-    color: var(--color-grey);
-    font-size: 0.7em;
-    display: none;
-    margin-bottom: 10px;
+.progress-value-attack,
+.progress-value-defense,
+.progress-value-power {
+  color: var(--color-grey);
+  font-size: 0.7em;
+  display: none;
+  margin-bottom: 10px;
 }
-
 
 #pokeball-image img {
-    width: 60px;
-    padding-bottom: 25px;
-    
+  width: 60px;
+  padding-bottom: 25px;
 }
-
 
 .ball-turn {
-    transform: rotate(360deg);
-    transition: all 0.5 ease-in-out;
+  transform: rotate(360deg);
+  transition: all 0.5 ease-in-out;
 }
-
 
 .turn {
-    animation-name: turn;
-    animation-duration: 0.7s;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    
+  animation-name: turn;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
 }
-
 
 @keyframes turn {
-
-    0% { transform: rotate(0);}
-    10% { transform: rotate(0deg);}
-    30% {transform: rotate(0deg);}
-    50% {transform: rotate(-15deg);}
-    100% {transform: rotate(360deg);}
-  
+  0% { transform: rotate(0); }
+  10% { transform: rotate(0deg); }
+  30% { transform: rotate(0deg); }
+  50% { transform: rotate(-15deg); }
+  100% { transform: rotate(360deg); }
 }
-
-
-
-
 
 /*=============================*/
 /*========NES LIBRAIRIE========*/
 /*=============================*/
 
-.dev-progress {
-    text-align: center;
-}
+.dev-progress { text-align: center; }
 
-.dev-progress p {
-    text-align: left;
-}
-
+.dev-progress p { text-align: left; }
 
 .nes-progress {
-    width: 95%;
-    height: 20px;
+  width: 95%;
+  height: 20px;
 }
 
 /*=============================*/
 /*=========RETOUR-MENU=========*/
 /*=============================*/
 
-#retour-menu { 
-    text-align: center;
-    margin-top: 100px;
-    
+#retour-menu {
+  text-align: center;
+  margin-top: 100px;
 }
 
-#retour-menu img {
-    width: 40px;
-}
+#retour-menu img { width: 40px; }
+
 
 
 /*=============================*/
 /*===========FOOTER============*/
 /*=============================*/
-footer {
-    margin-top: 100px;
-}
+footer { margin-top: 100px; }
 
 img[alt="what the fabrik"] { width: 60px; }
 img[alt="smartphone"] { width: 40px; }
 img[alt="linkedIn"] { width: 60px; }
-
 
 
 
@@ -566,172 +421,139 @@ img[alt="linkedIn"] { width: 60px; }
 /*=============================*/
 
 @media screen and (min-width: 640px) {
-    .devs .dev {  grid-column: span 4; }
-     p {
-        font-size: 1em;
-    }
-
+  .devs .dev { grid-column: span 4; }
+  p { font-size: 1em; }
 }
 
+@media screen and (min-width: 768px) {
+  .infos-pokedev { font-size: 1.1em; }
+
+  button,
+  p,
+  li,
+  footer p,
+  .instructions-presentation,
+  #formulaire-presentation {
+    font-size: 1em;
+  }
+
+  h1 { font-size: 1.4em; }
+
+  #hero {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 50px;
+    margin-bottom: 100px;
+  }
+
+  .hero-card { grid-column: span 4; }
+
+  #btn-formulaire { margin: 0 0 0 30px; }
+
+  #presentation-image {
+    width: 200px;
+    z-index: 10;
+  }
 
 
-
-
-@media screen and (min-width: 768px)  {
-
-
-    .infos-pokedev { font-size: 1.1em; }
-
-    button, p, li, footer p, .instructions-presentation, #formulaire-presentation { font-size: 1em; }
-    
-
-    h1 { font-size: 1.4em; }
-    
+  .bounce-3 {
+    animation-name: mySecondBounce;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
   
-
-
-
-    #hero{
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 50px; 
-        margin-bottom: 100px;
+  @keyframes mySecondBounce{
+    0% { transform: translateY(0); }
+    10% {
+      transform: translateY(0px);
+      transform: rotate(5deg); 
     }
-
-    .hero-card { grid-column: span 4; }
-        
-   
-    #btn-formulaire { margin: 0 0 0 30px; }
-
-    #presentation-image {
-        width: 200px;
-        z-index: 10;
-        
+    30% {
+      transform: translateY(-6px);
+      transform: rotate(-3deg); 
     }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+  }
 
 
+  .dev-progress { display: block; }
 
-    .dev-progress {
-        display: block;
-    }
-    
-    
+  .nes-progress { width: 80%; }
 
-    .nes-progress {
-        width: 80%;
-    }
+  .photo {
+    width: 40%;
+    max-height: 50vh;
+    float: left;
+    display: inline;
+  }
 
+  .progress-value-attack,
+  .progress-value-defense,
+  .progress-value-power {
+    color: var(--color-grey);
+    font-size: 0.8em;
+    display: inline-block;
+    margin-bottom: 0;
+  }
 
-    .photo {
-        width: 40%;
-        max-height: 50vh;
-        float: left;  
-        display: inline;
-        
-    }
-
-    .progress-value-attack, .progress-value-defense, .progress-value-power { 
-        color: var(--color-grey);
-        font-size: 0.8em;
-        display: inline-block;
-        margin-bottom: 0;
-    }
-
-    #pokeball-image img {
-        width: 70px;
-        padding: 15px 0;
-       
-    }
-    
+  #pokeball-image img {
+    width: 70px;
+    padding: 15px 0;
+  }
 }
 
+@media screen and (min-width: 990px) {
+  #retro-star { display: inline-block; }
 
+  .devs .dev { grid-column: span 3; }
 
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 
-@media screen and (min-width: 990px)  {
-    
-    #retro-star {
-        display: inline-block;
-    }
+  .dev-zoom {
+    background-color: rgb(37, 37, 39);
+    max-width: 80%;
+    display: none;
+    color: white;
+    padding: 25px 10px 0px 10px;
+    border-radius: var(--radius);
+  }
 
-
-
-    .devs .dev {  
-        grid-column: span 3;
-    }
-
-    .container {
-        max-width: 960px;
-        margin: 0 auto;
-    }
-
-
-    .dev-zoom {
-        background-color: rgb(37, 37, 39);
-        max-width: 80%;
-        display: none;
-        color: white;
-        padding: 25px 10px 0px 10px;
-        border-radius: var(--radius); 
-    }
-
-
-
-    .dev-stats {
-        clear: both;
-    }
-
-    
-    
-
+  .dev-stats { clear: both; }
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
 
+  .dev-zoom {
+    background-color: rgb(37, 37, 39);
+    max-width: 628px;
+    display: none;
+    color: white;
+    padding: 25px 10px 0px 10px;
+    border-radius: var(--radius);
+  }
 
+  .photo {
+    margin-bottom: 30px;
+    width: 222px;
+    float: none;
+  }
 
-@media screen and (min-width: 1200px)  {
+  .dev-stats { margin-top: 45px; }
 
+  .dev-description { text-align: left; }
 
-    .container {
-        max-width: 1100px;
-        margin: 0 auto;
-    }
-
-
-
-    .dev-zoom {
-        background-color: rgb(37, 37, 39);
-        max-width: 628px;
-        display: none;
-        color: white;
-        padding: 25px 10px 0px 10px;
-        border-radius: var(--radius); 
-        
-    }
-    
-   .photo {
-       margin-bottom: 30px;
-       width: 222px;
-       float:none;
-   }
-
- 
-
-    .dev-stats {
-        
-        margin-top: 45px;
-    }
-
-    .dev-description {
-        text-align: left;
-    }
-    
-    .image-description {
-        display: flex;
-        align-items: center;
-    }
-   
-
+  .image-description {
+    display: flex;
+    align-items: center;
+  }
 }
-
-
