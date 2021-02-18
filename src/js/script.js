@@ -8,7 +8,7 @@ $(() => {
     var $bouton = $('#btn-formulaire');
     var $manette = $('#manette-presentation');
     
-    
+
         $manette.on('click', function() {
             $("#pokedev").fadeIn(1500);
         })
@@ -334,6 +334,7 @@ $(() => {
             $("header").addClass('filter');
             $(".devs").addClass('filter');
             $(".nes-container").addClass('filter');
+            $("#retour-menu").addClass('filter');
         
 
 
@@ -370,6 +371,7 @@ $(() => {
             $("header").removeClass('filter');
             $(".devs").removeClass('filter');
             $(".nes-container").removeClass('filter');
+            $("#retour-menu").removeClass('filter');
         })
 
 })

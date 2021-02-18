@@ -322,6 +322,8 @@ img#pokemon-3 {
   border-radius: var(--radius);
   text-align: center;
   box-shadow: 2px 2px 2px black;
+  width: 70%;
+  z-index: 100;
 }
 
 .dev-description {
@@ -457,6 +459,7 @@ img[alt="linkedIn"] { width: 60px; }
   .infos-pokedev { font-size: 1.1em; }
 
   .dev-description { font-size: 0.8em; }
+  .dev-zoom { width: 45%; }
 
   button,
   p,
