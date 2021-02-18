@@ -193,6 +193,28 @@ header img {
   z-index: 10;
 }
 
+.bounce-3 {
+  animation-name: mySecondBounce;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mySecondBounce{
+  0% { transform: translateY(0); }
+  10% {
+    transform: translateY(0px);
+    transform: rotate(5deg); 
+  }
+  30% {
+    transform: translateY(-6px);
+    transform: rotate(-3deg); 
+  }
+  50% { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+
 .nes-logo {
   margin-top: 15px;
   float: right;
@@ -305,6 +327,7 @@ img#pokemon-3 {
 .dev-description {
   text-align: left;
   margin-bottom: 0;
+  font-size: 0.7em; 
 }
 
 .photo {
@@ -379,6 +402,7 @@ img#pokemon-3 {
   100% { transform: rotate(360deg); }
 }
 
+
 /*=============================*/
 /*========NES LIBRAIRIE========*/
 /*=============================*/
@@ -416,6 +440,8 @@ img[alt="linkedIn"] { width: 60px; }
 
 
 
+
+
 /*=============================*/
 /*========MEDIA QUERIES========*/
 /*=============================*/
@@ -425,8 +451,12 @@ img[alt="linkedIn"] { width: 60px; }
   p { font-size: 1em; }
 }
 
+
+
 @media screen and (min-width: 768px) {
   .infos-pokedev { font-size: 1.1em; }
+
+  .dev-description { font-size: 0.8em; }
 
   button,
   p,
@@ -453,29 +483,6 @@ img[alt="linkedIn"] { width: 60px; }
   #presentation-image {
     width: 200px;
     z-index: 10;
-  }
-
-
-  .bounce-3 {
-    animation-name: mySecondBounce;
-    animation-duration: 4s;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes mySecondBounce{
-    0% { transform: translateY(0); }
-    10% {
-      transform: translateY(0px);
-      transform: rotate(5deg); 
-    }
-    30% {
-      transform: translateY(-6px);
-      transform: rotate(-3deg); 
-    }
-    50% { transform: translateY(0); }
-    100% { transform: translateY(0); }
   }
 
 
@@ -508,6 +515,7 @@ img[alt="linkedIn"] { width: 60px; }
 @media screen and (min-width: 990px) {
   #retro-star { display: inline-block; }
 
+  .dev-description { font-size: 0.9em; }
   .devs .dev { grid-column: span 3; }
 
   .container {
